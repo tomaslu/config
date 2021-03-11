@@ -1,6 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" NOTE: Old configuration for when Vundle was being used (it should be ignored
+" now)
+"
 "     " set the runtime path to include Vundle and initialize
 "     set rtp+=~/.vim/bundle/Vundle.vim
 "     call vundle#begin()
@@ -47,6 +50,15 @@ filetype off                  " required
 "     "
 "     " see :h vundle for more details or wiki for FAQ
 "     " Put your non-Plugin stuff after this line
+
+" This configuration uses vim8 plugins directly. Do the following to install
+" the plugins:
+"
+" mkdir -p ~/.vim/pack/vendor/start
+" git clone --depth 1 https://github.com/preservim/nerdtree.git
+" git clone --depth 1 https://github.com/ctrlpvim/ctrlp.vim.git
+" git clone --depth 1 https://github.com/mileszs/ack.vim.git
+" git clone --depth 1 https://github.com/vim-airline/vim-airline.git
 
 syntax on
 filetype indent plugin on
@@ -99,8 +111,8 @@ map <C-k> <C-w>k
 map <C-j> <C-w>j
 map <C-h> <C-w>h
 
-" configure ack plugin to use ag
-" let g:ackprg = 'ag --nogroup --nocolor --column'
+" configure ack plugin to use ag (requires ack and ag)
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " configure NERDTree to ignore non-editable files
 let NERDTreeIgnore = ['\.pyc$']
