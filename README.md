@@ -10,3 +10,5 @@ This repository contains configuration files for different developer tools.
 
 ### `vscode/settings.json`
 VSCode `settings.json` file should be placed in `~/.config/Code/User/settings.json` on Linux.
+
+Make sure that `vim` by `vscodevim.vim` in order for vim settings to work.
