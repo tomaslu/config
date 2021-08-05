@@ -70,6 +70,7 @@ set softtabstop=4
 
 " set identation for different filetypes
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascriptreact setlocal ts=2 sts=2 sw=2
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype css setlocal ts=2 sts=2 sw=2
 autocmd Filetype go setlocal ts=8 sts=8 sw=8
@@ -110,6 +111,11 @@ map <C-l> <C-w>l
 map <C-k> <C-w>k
 map <C-j> <C-w>j
 map <C-h> <C-w>h
+
+" configure CtrlP custom ignore directory
+let g:ctrlp_custom_ignore = {
+    \ 'dir': 'node_modules',
+    \ }
 
 " configure ack plugin to use ag (requires ack and ag)
 let g:ackprg = 'ag --nogroup --nocolor --column'
