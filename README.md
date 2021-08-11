@@ -9,6 +9,11 @@ This repository contains configuration files for different developer tools.
 `.vimrc` file contains commented out section that was used before vim 8 when Vundle was used as package manager. Since vim 8, vim 8 package manager is being used instead.
 
 ### `vscode/settings.json`
-VSCode `settings.json` file should be placed in `~/.config/Code/User/settings.json` on Linux.
+VSCode `settings.json` file should be placed in:
+- `~/.config/Code/User/settings.json` on Linux.
+- `Library/Application\ Support/Code/User` on MacOS.
 
-Make sure that `vim` by `vscodevim.vim` in order for vim settings to work.
+### VSCode Plugins
+- Python - Microsoft
+- ESLint
+- Vim - vscodevim
