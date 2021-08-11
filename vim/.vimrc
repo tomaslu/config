@@ -55,10 +55,14 @@ filetype off                  " required
 " the plugins:
 "
 " mkdir -p ~/.vim/pack/vendor/start
+" cd ~/.vim/pack/vendor/start
 " git clone --depth 1 https://github.com/preservim/nerdtree.git
 " git clone --depth 1 https://github.com/ctrlpvim/ctrlp.vim.git
 " git clone --depth 1 https://github.com/mileszs/ack.vim.git
 " git clone --depth 1 https://github.com/vim-airline/vim-airline.git
+"
+" After this just copy over this .vimrc file to ~/.vimrc, and everhting should
+" work after that.
 
 syntax on
 filetype indent plugin on
